@@ -13,6 +13,18 @@
 		6761ABFB20B3205000F33068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6761ABFA20B3205000F33068 /* Assets.xcassets */; };
 		6761ABFE20B3205000F33068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6761ABFC20B3205000F33068 /* LaunchScreen.storyboard */; };
 		6761AC0920B3205000F33068 /* NetworkingLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC0820B3205000F33068 /* NetworkingLayerTests.swift */; };
+		6761AC1620B3211C00F33068 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC1520B3211C00F33068 /* Endpoint.swift */; };
+		6761AC1820B3216E00F33068 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC1720B3216E00F33068 /* HTTPMethod.swift */; };
+		6761AC1A20B321CF00F33068 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC1920B321CF00F33068 /* HTTPTask.swift */; };
+		6761AC1C20B321F100F33068 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC1B20B321F100F33068 /* NetworkError.swift */; };
+		6761AC1E20B3222700F33068 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC1D20B3222700F33068 /* ParameterEncoder.swift */; };
+		6761AC2020B3223700F33068 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC1F20B3223700F33068 /* NetworkService.swift */; };
+		6761AC2520B3234100F33068 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC2420B3234100F33068 /* URLParameterEncoder.swift */; };
+		6761AC2720B3263200F33068 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC2620B3263200F33068 /* JSONParameterEncoder.swift */; };
+		6761AC2920B32AAD00F33068 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC2820B32AAD00F33068 /* Service.swift */; };
+		6761AC2C20B3438100F33068 /* MovieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC2B20B3438100F33068 /* MovieApi.swift */; };
+		6761AC2E20B343C700F33068 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC2D20B343C700F33068 /* MovieModel.swift */; };
+		6761AC3020B3449100F33068 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6761AC2F20B3449100F33068 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,18 @@
 		6761AC0420B3205000F33068 /* NetworkingLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6761AC0820B3205000F33068 /* NetworkingLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingLayerTests.swift; sourceTree = "<group>"; };
 		6761AC0A20B3205000F33068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6761AC1520B3211C00F33068 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		6761AC1720B3216E00F33068 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		6761AC1920B321CF00F33068 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		6761AC1B20B321F100F33068 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		6761AC1D20B3222700F33068 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		6761AC1F20B3223700F33068 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6761AC2420B3234100F33068 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		6761AC2620B3263200F33068 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		6761AC2820B32AAD00F33068 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		6761AC2B20B3438100F33068 /* MovieApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApi.swift; sourceTree = "<group>"; };
+		6761AC2D20B343C700F33068 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		6761AC2F20B3449100F33068 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +101,8 @@
 		6761ABF220B3204E00F33068 /* NetworkingLayer */ = {
 			isa = PBXGroup;
 			children = (
+				6761AC2A20B3432F00F33068 /* Movies */,
+				6761AC1320B3207300F33068 /* Networking */,
 				6761ABF320B3204E00F33068 /* AppDelegate.swift */,
 				6761ABF520B3204E00F33068 /* ViewController.swift */,
 				6761ABF720B3204E00F33068 /* Main.storyboard */,
@@ -94,6 +120,48 @@
 				6761AC0A20B3205000F33068 /* Info.plist */,
 			);
 			path = NetworkingLayerTests;
+			sourceTree = "<group>";
+		};
+		6761AC1320B3207300F33068 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6761AC2320B3232000F33068 /* Implementations */,
+				6761AC1420B320D800F33068 /* Protocols */,
+				6761AC1720B3216E00F33068 /* HTTPMethod.swift */,
+				6761AC1920B321CF00F33068 /* HTTPTask.swift */,
+				6761AC1B20B321F100F33068 /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6761AC1420B320D800F33068 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6761AC1520B3211C00F33068 /* Endpoint.swift */,
+				6761AC1D20B3222700F33068 /* ParameterEncoder.swift */,
+				6761AC1F20B3223700F33068 /* NetworkService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6761AC2320B3232000F33068 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				6761AC2420B3234100F33068 /* URLParameterEncoder.swift */,
+				6761AC2620B3263200F33068 /* JSONParameterEncoder.swift */,
+				6761AC2820B32AAD00F33068 /* Service.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		6761AC2A20B3432F00F33068 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				6761AC2B20B3438100F33068 /* MovieApi.swift */,
+				6761AC2D20B343C700F33068 /* MovieModel.swift */,
+				6761AC2F20B3449100F33068 /* NetworkManager.swift */,
+			);
+			path = Movies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +265,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6761AC1820B3216E00F33068 /* HTTPMethod.swift in Sources */,
+				6761AC1A20B321CF00F33068 /* HTTPTask.swift in Sources */,
+				6761AC2020B3223700F33068 /* NetworkService.swift in Sources */,
 				6761ABF620B3204E00F33068 /* ViewController.swift in Sources */,
+				6761AC1620B3211C00F33068 /* Endpoint.swift in Sources */,
+				6761AC2920B32AAD00F33068 /* Service.swift in Sources */,
+				6761AC2E20B343C700F33068 /* MovieModel.swift in Sources */,
+				6761AC1C20B321F100F33068 /* NetworkError.swift in Sources */,
+				6761AC2C20B3438100F33068 /* MovieApi.swift in Sources */,
+				6761AC2720B3263200F33068 /* JSONParameterEncoder.swift in Sources */,
+				6761AC3020B3449100F33068 /* NetworkManager.swift in Sources */,
 				6761ABF420B3204E00F33068 /* AppDelegate.swift in Sources */,
+				6761AC1E20B3222700F33068 /* ParameterEncoder.swift in Sources */,
+				6761AC2520B3234100F33068 /* URLParameterEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
