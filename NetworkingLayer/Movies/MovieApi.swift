@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 enum NetworkEnvironment {
     case qa
     case production
@@ -57,8 +56,6 @@ extension MovieApi: Endpoint {
     var task: HTTPTask {
         switch self {
         case .newMovies(let page):
-            return .requestParameters(bodyParameters: nil, urlParameters: ["page": page, "api_key": NetworkManager.movieAPIKey])
-        case .popular(let page):
             return .requestParameters(bodyParameters: nil, urlParameters: ["page": page, "api_key": NetworkManager.movieAPIKey])
         default:
             return .request

@@ -11,5 +11,6 @@ import Foundation
 enum NetworkError: Error {
     case missingParamters
     case encodingFailed
+    case decodingFailed
     case missingURL
 }
