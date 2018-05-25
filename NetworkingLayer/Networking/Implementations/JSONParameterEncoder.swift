@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct JSONParameterEncoder: ParameterEncoder {
+class JSONParameterEncoder: ParameterEncoder {
+    
     static func encode(request: inout URLRequest, with parameters: Parameters) throws {
         guard request.url != nil else { throw NetworkError.missingURL }
         

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct URLParameterEncoder: ParameterEncoder {
+class URLParameterEncoder: ParameterEncoder {
     
     static func encode(request: inout URLRequest, with parameters: Parameters) throws {
         guard let url = request.url else { throw NetworkError.missingURL }

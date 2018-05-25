@@ -10,22 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var networkManager: NetworkManager!
+    var viewModel: MoviesViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        networkManager = NetworkManager()
+        viewModel = MoviesViewModel()
         
-        networkManager.getNewMovies(page: 1) { movies, error in
-            if let error = error {
-                print(error)
-            }
-            
-            if let movies = movies {
-                print(movies)
-            }
-        }
+        // TODO: setup observation of the viewModel to refresh the view
+        
+        viewModel.getNewMovies()
     }
 }
 

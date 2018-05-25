@@ -8,11 +8,11 @@
 
 import Foundation
 
-class Service<EndpointType: Endpoint>: NetworkService {
+class Service: NetworkService {
     
     private var task: URLSessionTask?
     
-    func request(_ endpoint: EndpointType, completion: @escaping NetworkServiceCompletion) {
+    func request(_ endpoint: Endpoint, completion: @escaping NetworkServiceCompletion) {
         
         let session = URLSession.shared
         do {
@@ -31,7 +31,7 @@ class Service<EndpointType: Endpoint>: NetworkService {
         task?.cancel()
     }
     
-    private func buildRequest(from endpoint: EndpointType) throws -> URLRequest {
+    private func buildRequest(from endpoint: Endpoint) throws -> URLRequest {
         var request = URLRequest(url: endpoint.baseURL.appendingPathComponent(endpoint.path),
                                  cachePolicy: .reloadIgnoringLocalAndRemoteCacheData,
                                  timeoutInterval: 10.0)

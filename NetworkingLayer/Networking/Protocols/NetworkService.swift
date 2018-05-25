@@ -11,7 +11,6 @@ import Foundation
 typealias NetworkServiceCompletion = (_ data: Data?, _ response: URLResponse?, _ error: Error?) -> Void
 
 protocol NetworkService: class {
-    associatedtype EndpointType: Endpoint
-    func request(_ route: EndpointType, completion: @escaping NetworkServiceCompletion)
+    func request(_ route: Endpoint, completion: @escaping NetworkServiceCompletion)
     func cancel()
 }
