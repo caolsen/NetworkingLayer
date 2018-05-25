@@ -8,23 +8,23 @@
 
 import Foundation
 
-enum NetworkEnvironment {
-    case qa
-    case production
-    case staging
-}
-
-public enum MovieApi {
+enum MovieApiRoute {
     case recommended(id:Int)
     case popular(page:Int)
     case newMovies(page:Int)
     case video(id:Int)
 }
 
+struct MovieApi {
+    let route: MovieApiRoute
+    let environment: NetworkEnvironment
+    let apiKey: String
+}
+
 extension MovieApi: Endpoint {
     
     var environmentBaseURL : String {
-        switch NetworkManager.environment {
+        switch environment {
         case .production: return "https://api.themoviedb.org/3/movie/"
         case .qa: return "https://qa.themoviedb.org/3/movie/"
         case .staging: return "https://staging.themoviedb.org/3/movie/"
@@ -37,7 +37,7 @@ extension MovieApi: Endpoint {
     }
     
     var path: String {
-        switch self {
+        switch route {
         case .recommended(let id):
             return "\(id)/recommendations"
         case .popular:
@@ -54,9 +54,9 @@ extension MovieApi: Endpoint {
     }
     
     var task: HTTPTask {
-        switch self {
+        switch route {
         case .newMovies(let page):
-            return .requestParameters(bodyParameters: nil, urlParameters: ["page": page, "api_key": NetworkManager.movieAPIKey])
+            return .requestParameters(bodyParameters: nil, urlParameters: ["page": page, "api_key": apiKey])
         default:
             return .request
         }
